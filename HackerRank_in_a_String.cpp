@@ -15,108 +15,123 @@ int main(){
                 i++;
          //       cout<<"loop\n";
             };
-            if(i+1 == s.length())
+        i++;
+            if(i == s.length())
             {
-                cout<<"NO\n";
-                continue;
+                //cout<<"NO\n";
+                goto exit;
             }
      //   cout<<"After h\n";
                 
-            while(i+1 < s.length() && s[i+1]!='a')
+            while(i < s.length() && s[i]!='a')
             {
               i++  ;
           //      cout<<"loop\n";
             };
-            if(i+1 == s.length())
+        i++;
+            if(i == s.length())
             {
-                cout<<"NO\n";
-                continue;
+               // cout<<"NO\n";
+               goto exit;
             }   
         //cout<<"After ha\n";
-            while(i+1 < s.length() && s[i+1]!='c')
+            while(i< s.length() && s[i]!='c')
             {
               i++  ;
            //     cout<<"loop\n";
             };
-            if(i+1 == s.length())
+        i++;
+            if(i == s.length())
             {
-                cout<<"NO\n";
-                continue;
+               // cout<<"NO\n";
+               goto exit;
             }  
       //  cout<<"After hac\n";
-            while(i+1 < s.length() && s[i+1]!='k')
+            while(i < s.length() && s[i]!='k')
             {
               i++  ;
         //        cout<<"loop\n";
             };
-            if(i+1 == s.length())
+        i++;
+            if(i == s.length())
             {
-                cout<<"NO\n";
-                continue;
+               // cout<<"NO\n";
+                goto exit;
             }   
         //cout<<"After hack\n";
-            while(i+1 < s.length() && s[i+1]!='e')
+            while(i < s.length() && s[i]!='e')
             {
               i++  ;
            //     cout<<"loop\n";
-            };    
-            if(i+1 == s.length())
+            }; 
+        i++;
+            if(i == s.length())
             {
-                cout<<"NO\n";
-                continue;
+                //cout<<"NO\n";
+                goto exit;
             }     
      //   cout<<"After hacke\n";
-            while(i+1 < s.length() && s[i+1]!='r')
+            while(i < s.length() && s[i]!='r')
             {
               i++  ;
            //     cout<<"loop\n";
             };  
-            if(i+1 == s.length())
+        i++;
+            if(i == s.length())
             {
-                cout<<"NO\n";
-               continue;
+                //cout<<"NO\n";
+               goto exit;
             }  
         //cout<<"After hacker\n";
-            while(i+1 < s.length() && s[i+1]!='r')
+            while(i <= s.length() && s[i]!='r')
             {
               i++  ;
         //        cout<<"loop\n";
             };
-            if(i+1 == s.length())
+        i++;
+            if(i == s.length())
             {
-                cout<<"NO\n";
-               continue;
+                //cout<<"NO\n";
+               goto exit;
             }       
-        //cout<<"After hackerr\n";
-            while(i+1 < s.length() && s[i+1]!='a')
+       // cout<<"After hackerr\n";
+            while(i < s.length() && s[i]!='a')
             {
               i++ ; 
             //    cout<<"loop\n";
             };
-            if(i+1 == s.length())
+            if(i == s.length())
             {
-                cout<<"NO\n";
-                continue;
+                //cout<<"NO\n";
+                goto exit;
             } 
         //cout<<"After hackerra\n";
-            while(i+1 < s.length() && s[i+1]!='n')
+            while(i < s.length() && s[i]!='n')
             {
               i++  ;
              //   cout<<"loop\n";
             };     
-            if(i+1 == s.length())
+            if(i == s.length())
             {
-                cout<<"NO\n";
-                continue;
+                //cout<<"NO\n";
+                goto exit;
             } 
         //cout<<"After hackerran\n";
-            while(i+1 < s.length() && s[i+1]!='k')
+            while(i < s.length() && s[i]!='k')
             {
               i++  ;
             //    cout<<"loop\n";
               flag = 1;
-            };    
-        //cout<<"After hackerrank\n";
+                goto exit;
+            }; 
+             i++;
+            if(i == s.length())
+            {
+                //cout<<"NO\n";
+               goto exit;
+            }         
+       // cout<<"After hackerrank\n";
+        exit:
             if(flag == 1)
                 cout<<"YES\n";
             else
